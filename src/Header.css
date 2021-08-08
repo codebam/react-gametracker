@@ -1,0 +1,19 @@
+h1, h2, .links {
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.3em;
+}
+
+.link {
+  color: blue;
+  text-decoration: none;
+  margin: 0.5em;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

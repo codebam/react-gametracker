@@ -2,8 +2,12 @@ h1, h2, .links {
   text-align: center;
 }
 
+h1 {
+  font-size: 2em;
+}
+
 h2 {
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 .link {

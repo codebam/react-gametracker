@@ -14,9 +14,9 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ name, subtitle, links }) => {
   return (
     <>
-      <h1>{name}</h1>
-      <h2>{subtitle}</h2>
-      <div className="links">
+      <div className={"text-center"}>
+        <h1>{name}</h1>
+        <h2>{subtitle}</h2>
         {links.map((link) => (
           <a className={"link"} href={link.url}>
             {link.title}

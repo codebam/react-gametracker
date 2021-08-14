@@ -22,7 +22,7 @@
     @apply mx-auto;
   }
   input {
-    @apply rounded hover:bg-gray-200;
+    @apply rounded shadow hover:bg-gray-200;
   }
   .game, .list-head {
     @apply mx-10 my-2 grid grid-cols-4;

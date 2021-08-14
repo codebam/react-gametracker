@@ -6,18 +6,23 @@ const formInitialState = {
   name: "",
 };
 
-export const setGames = (games: Array<String>) => {
+export const saveGames = (games: Array<String>) => {
   localStorage.setItem("GAMES", JSON.stringify(_.uniq(games)));
 };
 
-const AddGame: React.FC = () => {
+interface AddGameProps {
+  setGames: Function;
+}
+
+const AddGame: React.FC<AddGameProps> = ({ setGames }) => {
   const [form, setForm] = useState(formInitialState);
 
   const handleFormSubmit = (event: any) => {
     event.preventDefault();
     const games = getGames();
     games.push(form.name);
-    setGames(games);
+    saveGames(games);
+    setGames(_.uniq(games));
   };
 
   const handleSetForm = ({ target: { name, value } }: any) => {

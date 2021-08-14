@@ -20,7 +20,7 @@ const GameList: React.FC = () => {
     <>
       <AddGame setGames={setGames} />
       {games.map((game: any) => (
-        <div key={game}>
+        <div className={"game"} key={game}>
           {game}
           <input
             type="button"

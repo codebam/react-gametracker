@@ -1,8 +1,8 @@
 {
-  "name": "portfolio-website",
+  "name": "react-gametracker",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://codebam.github.io/portfolio-react-typescript",
+  "homepage": "https://codebam.github.io/react-gametracker",
   "dependencies": {
     "@craco/craco": "^6.2.0",
     "@testing-library/jest-dom": "^5.11.4",

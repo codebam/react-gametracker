@@ -50,7 +50,7 @@ const GameList: React.FC = () => {
     if (sortDirection === "decending") {
       setSortDirection("ascending");
       const sorted = games.sort((a: gameObject, b: gameObject) =>
-        a.publisher > b.publisher ? 1 : -1
+        a.publisher > b.publisher ? -1 : 1
       );
       setGames(sorted);
     }
@@ -68,7 +68,7 @@ const GameList: React.FC = () => {
     if (sortDirection === "decending") {
       setSortDirection("ascending");
       const sorted = games.sort((a: gameObject, b: gameObject) =>
-        a.name > b.name ? 1 : -1
+        a.name > b.name ? -1 : 1
       );
       setGames(sorted);
     }

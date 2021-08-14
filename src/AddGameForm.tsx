@@ -36,7 +36,7 @@ const AddGame: React.FC<AddGameProps> = ({ setGames }) => {
         year: form.year,
       });
       saveGames(games);
-      setGames(_.uniq(games));
+      setGames(games);
     }
   };
 

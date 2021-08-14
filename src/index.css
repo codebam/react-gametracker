@@ -7,7 +7,7 @@
     @apply bg-green-300;
   }
   h1 {
-    @apply my-4 text-2xl text-center;
+    @apply mx-10 my-4 text-2xl;
   }
   h2 {
     @apply text-xl;
@@ -15,11 +15,8 @@
   a {
     @apply text-blue-700;
   }
-  form {
-    @apply flex flex-col;
-  }
   label {
-    @apply mx-auto;
+    @apply block w-10 mx-10;
   }
   input {
     @apply rounded shadow hover:bg-gray-200;

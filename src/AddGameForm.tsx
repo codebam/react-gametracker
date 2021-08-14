@@ -2,7 +2,13 @@ import React, { useState } from "react";
 import _ from "lodash";
 import { getGames } from "./GameList";
 
-const formInitialState = {
+export interface gameObject {
+  name: string;
+  publisher: string;
+  year: string;
+}
+
+const formInitialState: gameObject = {
   name: "",
   publisher: "",
   year: "",
@@ -22,7 +28,8 @@ const AddGame: React.FC<AddGameProps> = ({ setGames }) => {
   const handleFormSubmit = (event: any) => {
     event.preventDefault();
     const games = getGames();
-    if (form.name !== "") {
+    const names = games.map((game: gameObject) => game.name);
+    if (form.name !== "" && !names.includes(form.name)) {
       games.push({
         name: form.name,
         publisher: form.publisher,
@@ -62,7 +69,7 @@ const AddGame: React.FC<AddGameProps> = ({ setGames }) => {
         <input
           className={"add-game-button"}
           onChange={handleSetForm}
-          type="text"
+          type="year"
           name="year"
         />
       </label>

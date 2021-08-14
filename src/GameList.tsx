@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import AddGame, { saveGames } from "./AddGameForm";
+import AddGame, { saveGames, gameObject } from "./AddGameForm";
 import _ from "lodash";
 
 export const getGames = () => {
@@ -9,9 +9,12 @@ export const getGames = () => {
 const GameList: React.FC = () => {
   const [games, setGames] = useState(getGames());
 
-  const removeGame = (game: String) => {
+  const removeGame = (game: gameObject) => {
     const games = getGames();
-    _.remove(games, (g) => JSON.stringify(g) === JSON.stringify(game));
+    _.remove(
+      games,
+      (g: gameObject) => JSON.stringify(g) === JSON.stringify(game)
+    );
     saveGames(games);
     setGames(games);
   };

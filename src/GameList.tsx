@@ -8,6 +8,7 @@ export const getGames = () => {
 
 const GameList: React.FC = () => {
   const [games, setGames] = useState(getGames());
+  const [sortDirection, setSortDirection] = useState("ascending");
 
   const removeGame = (game: gameObject) => {
     const games = getGames();
@@ -21,26 +22,56 @@ const GameList: React.FC = () => {
 
   const sortListByYear = () => {
     const games = getGames();
-    const sorted = games.sort((a: gameObject, b: gameObject) =>
-      a.year > b.year ? 1 : -1
-    );
-    setGames(sorted);
+    if (sortDirection === "ascending") {
+      setSortDirection("decending");
+      const sorted = games.sort((a: gameObject, b: gameObject) =>
+        a.year > b.year ? 1 : -1
+      );
+      setGames(sorted);
+    }
+    if (sortDirection === "decending") {
+      setSortDirection("ascending");
+      const sorted = games.sort((a: gameObject, b: gameObject) =>
+        a.year > b.year ? -1 : 1
+      );
+      setGames(sorted);
+    }
   };
 
   const sortListByPublisher = () => {
     const games = getGames();
-    const sorted = games.sort((a: gameObject, b: gameObject) =>
-      a.publisher > b.publisher ? 1 : -1
-    );
-    setGames(sorted);
+    if (sortDirection === "ascending") {
+      setSortDirection("decending");
+      const sorted = games.sort((a: gameObject, b: gameObject) =>
+        a.publisher > b.publisher ? 1 : -1
+      );
+      setGames(sorted);
+    }
+    if (sortDirection === "decending") {
+      setSortDirection("ascending");
+      const sorted = games.sort((a: gameObject, b: gameObject) =>
+        a.publisher > b.publisher ? 1 : -1
+      );
+      setGames(sorted);
+    }
   };
 
   const sortListByName = () => {
     const games = getGames();
-    const sorted = games.sort((a: gameObject, b: gameObject) =>
-      a.name > b.name ? 1 : -1
-    );
-    setGames(sorted);
+    if (sortDirection === "ascending") {
+      setSortDirection("decending");
+      const sorted = games.sort((a: gameObject, b: gameObject) =>
+        a.name > b.name ? 1 : -1
+      );
+      setGames(sorted);
+    }
+    if (sortDirection === "decending") {
+      setSortDirection("ascending");
+      const sorted = games.sort((a: gameObject, b: gameObject) =>
+        a.name > b.name ? 1 : -1
+      );
+      setGames(sorted);
+    }
   };
 
   return (

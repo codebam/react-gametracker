@@ -19,9 +19,18 @@ const GameList: React.FC = () => {
     setGames(games);
   };
 
+  const sortListBy = (sortby: String) => {
+    const games = getGames();
+  };
+
   return (
     <>
       <AddGame setGames={setGames} />
+      <div className="list-head">
+        <div onClick={() => sortListBy("name")}>Name</div>
+        <div>Publisher</div>
+        <div>Year</div>
+      </div>
       {games.map((game: any) => (
         <div className={"game"} key={game.name}>
           <div className="game-name">{game.name}</div>

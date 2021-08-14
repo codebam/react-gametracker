@@ -21,10 +21,13 @@
   label {
     @apply mx-auto;
   }
-  .game {
+  .game, .list-head {
     @apply grid grid-cols-4 mx-10 my-2;
   }
   .add-game-button {
     @apply p-1;
+  }
+  .list-head {
+    @apply font-bold;
   }
 }

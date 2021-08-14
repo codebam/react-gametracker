@@ -47,7 +47,7 @@ const AddGame: React.FC<AddGameProps> = ({ setGames }) => {
   return (
     <form onSubmit={handleFormSubmit}>
       <label>
-        Name:
+        <p className={"text-label"}>Name:</p>
         <input
           className={"input-field"}
           onChange={handleSetForm}
@@ -56,7 +56,7 @@ const AddGame: React.FC<AddGameProps> = ({ setGames }) => {
         />
       </label>
       <label>
-        Publisher:
+        <p className={"text-label"}>Publisher:</p>
         <input
           className={"input-field"}
           onChange={handleSetForm}
@@ -65,7 +65,7 @@ const AddGame: React.FC<AddGameProps> = ({ setGames }) => {
         />
       </label>
       <label>
-        Year:
+        <p className={"text-label"}>Year:</p>
         <input
           className={"input-field"}
           onChange={handleSetForm}

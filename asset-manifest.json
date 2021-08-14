@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/react-gametracker/static/css/main.2bab6d18.chunk.css",
-    "main.js": "/react-gametracker/static/js/main.3fa102a1.chunk.js",
-    "main.js.map": "/react-gametracker/static/js/main.3fa102a1.chunk.js.map",
+    "main.js": "/react-gametracker/static/js/main.c6af2d7d.chunk.js",
+    "main.js.map": "/react-gametracker/static/js/main.c6af2d7d.chunk.js.map",
     "runtime-main.js": "/react-gametracker/static/js/runtime-main.2de253ef.js",
     "runtime-main.js.map": "/react-gametracker/static/js/runtime-main.2de253ef.js.map",
-    "static/js/2.8049401b.chunk.js": "/react-gametracker/static/js/2.8049401b.chunk.js",
-    "static/js/2.8049401b.chunk.js.map": "/react-gametracker/static/js/2.8049401b.chunk.js.map",
+    "static/js/2.8f9b4316.chunk.js": "/react-gametracker/static/js/2.8f9b4316.chunk.js",
+    "static/js/2.8f9b4316.chunk.js.map": "/react-gametracker/static/js/2.8f9b4316.chunk.js.map",
     "static/js/3.48e98d52.chunk.js": "/react-gametracker/static/js/3.48e98d52.chunk.js",
     "static/js/3.48e98d52.chunk.js.map": "/react-gametracker/static/js/3.48e98d52.chunk.js.map",
     "index.html": "/react-gametracker/index.html",
     "static/css/main.2bab6d18.chunk.css.map": "/react-gametracker/static/css/main.2bab6d18.chunk.css.map",
-    "static/js/2.8049401b.chunk.js.LICENSE.txt": "/react-gametracker/static/js/2.8049401b.chunk.js.LICENSE.txt"
+    "static/js/2.8f9b4316.chunk.js.LICENSE.txt": "/react-gametracker/static/js/2.8f9b4316.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.2de253ef.js",
-    "static/js/2.8049401b.chunk.js",
+    "static/js/2.8f9b4316.chunk.js",
     "static/css/main.2bab6d18.chunk.css",
-    "static/js/main.3fa102a1.chunk.js"
+    "static/js/main.c6af2d7d.chunk.js"
   ]
 }

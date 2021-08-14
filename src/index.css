@@ -16,7 +16,7 @@
     @apply text-blue-700;
   }
   label {
-    @apply block mx-10;
+    @apply block mx-10 w-80;
   }
   input {
     @apply rounded shadow hover:bg-gray-200;

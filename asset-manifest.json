@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-gametracker/static/css/main.2bab6d18.chunk.css",
-    "main.js": "/react-gametracker/static/js/main.c6af2d7d.chunk.js",
-    "main.js.map": "/react-gametracker/static/js/main.c6af2d7d.chunk.js.map",
+    "main.js": "/react-gametracker/static/js/main.40d4437f.chunk.js",
+    "main.js.map": "/react-gametracker/static/js/main.40d4437f.chunk.js.map",
     "runtime-main.js": "/react-gametracker/static/js/runtime-main.2de253ef.js",
     "runtime-main.js.map": "/react-gametracker/static/js/runtime-main.2de253ef.js.map",
     "static/js/2.8f9b4316.chunk.js": "/react-gametracker/static/js/2.8f9b4316.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.2de253ef.js",
     "static/js/2.8f9b4316.chunk.js",
     "static/css/main.2bab6d18.chunk.css",
-    "static/js/main.c6af2d7d.chunk.js"
+    "static/js/main.40d4437f.chunk.js"
   ]
 }

@@ -49,7 +49,7 @@ const AddGame: React.FC<AddGameProps> = ({ setGames }) => {
       <label>
         Name:
         <input
-          className={"add-game-button"}
+          className={"input-field"}
           onChange={handleSetForm}
           type="text"
           name="name"
@@ -58,7 +58,7 @@ const AddGame: React.FC<AddGameProps> = ({ setGames }) => {
       <label>
         Publisher:
         <input
-          className={"add-game-button"}
+          className={"input-field"}
           onChange={handleSetForm}
           type="text"
           name="publisher"
@@ -67,13 +67,13 @@ const AddGame: React.FC<AddGameProps> = ({ setGames }) => {
       <label>
         Year:
         <input
-          className={"add-game-button"}
+          className={"input-field"}
           onChange={handleSetForm}
           type="year"
           name="year"
         />
       </label>
-      <input className={"add-game-button"} type="submit" value="Add Game" />
+      <input className={"add-button"} type="submit" value="Add Game" />
     </form>
   );
 };

@@ -4,7 +4,7 @@
 
 @layer base {
   html {
-    @apply bg-indigo-300;
+    @apply bg-green-300;
   }
   h1 {
     @apply my-4 text-2xl text-center;
@@ -16,16 +16,22 @@
     @apply text-blue-700;
   }
   form {
-    @apply flex flex-col content-center justify-center m-1;
+    @apply flex flex-col;
   }
   label {
     @apply mx-auto;
   }
+  input {
+    @apply rounded hover:bg-gray-200;
+  }
   .game, .list-head {
     @apply mx-10 my-2 grid grid-cols-4;
   }
-  .add-game-button {
-    @apply p-1;
+  .add-button {
+    @apply p-1 mx-10 my-2;
+  }
+  .input-field {
+    @apply my-1;
   }
   .list-head {
     @apply font-bold;

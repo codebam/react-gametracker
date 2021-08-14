@@ -15,10 +15,13 @@
   a {
     @apply text-blue-700;
   }
-  form, .game {
+  form {
     @apply flex m-1 justify-center;
   }
-  .remove-button {
-    @apply ml-3;
+  .game {
+    @apply grid grid-cols-2 mx-10 my-2;
+  }
+  .add-game-button {
+    @apply p-1;
   }
 }

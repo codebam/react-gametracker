@@ -35,9 +35,14 @@ const AddGame: React.FC<AddGameProps> = ({ setGames }) => {
     <form onSubmit={handleFormSubmit}>
       <label>
         Name:
-        <input onChange={handleSetForm} type="text" name="name" />
+        <input
+          className={"add-game-button"}
+          onChange={handleSetForm}
+          type="text"
+          name="name"
+        />
       </label>
-      <input type="submit" value="Add Game" />
+      <input className={"add-game-button"} type="submit" value="Add Game" />
     </form>
   );
 };

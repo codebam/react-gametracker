@@ -23,6 +23,7 @@ const GameList: React.FC = () => {
         <div className={"game"} key={game}>
           {game}
           <input
+            className={"remove-button"}
             type="button"
             value="remove"
             onClick={() => removeGame(game)}

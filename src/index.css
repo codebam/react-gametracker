@@ -20,4 +20,7 @@
   form, .game {
     @apply flex m-1 justify-center;
   }
+  .remove-button {
+    @apply ml-3;
+  }
 }

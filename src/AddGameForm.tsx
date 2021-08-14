@@ -4,6 +4,8 @@ import { getGames } from "./GameList";
 
 const formInitialState = {
   name: "",
+  publisher: "",
+  year: "",
 };
 
 export const saveGames = (games: Array<String>) => {
@@ -21,7 +23,11 @@ const AddGame: React.FC<AddGameProps> = ({ setGames }) => {
     event.preventDefault();
     const games = getGames();
     if (form.name !== "") {
-      games.push(form.name);
+      games.push({
+        name: form.name,
+        publisher: form.publisher,
+        year: form.year,
+      });
       saveGames(games);
       setGames(_.uniq(games));
     }
@@ -40,6 +46,24 @@ const AddGame: React.FC<AddGameProps> = ({ setGames }) => {
           onChange={handleSetForm}
           type="text"
           name="name"
+        />
+      </label>
+      <label>
+        Publisher:
+        <input
+          className={"add-game-button"}
+          onChange={handleSetForm}
+          type="text"
+          name="publisher"
+        />
+      </label>
+      <label>
+        Year:
+        <input
+          className={"add-game-button"}
+          onChange={handleSetForm}
+          type="text"
+          name="year"
         />
       </label>
       <input className={"add-game-button"} type="submit" value="Add Game" />

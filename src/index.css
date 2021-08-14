@@ -16,10 +16,13 @@
     @apply text-blue-700;
   }
   form {
-    @apply flex m-1 justify-center;
+    @apply flex flex-col m-1 justify-center content-center;
+  }
+  label {
+    @apply mx-auto;
   }
   .game {
-    @apply grid grid-cols-2 mx-10 my-2;
+    @apply grid grid-cols-4 mx-10 my-2;
   }
   .add-game-button {
     @apply p-1;

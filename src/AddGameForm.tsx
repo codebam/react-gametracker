@@ -20,9 +20,11 @@ const AddGame: React.FC<AddGameProps> = ({ setGames }) => {
   const handleFormSubmit = (event: any) => {
     event.preventDefault();
     const games = getGames();
-    games.push(form.name);
-    saveGames(games);
-    setGames(_.uniq(games));
+    if (form.name !== "") {
+      games.push(form.name);
+      saveGames(games);
+      setGames(_.uniq(games));
+    }
   };
 
   const handleSetForm = ({ target: { name, value } }: any) => {

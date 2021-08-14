@@ -1,21 +1,21 @@
 import React, { useState } from "react";
 import AddGame, { saveGames } from "./AddGameForm";
+import _ from "lodash";
 
 export const getGames = () => {
   return JSON.parse(localStorage.getItem("GAMES") ?? "[]");
 };
 
 const GameList: React.FC = () => {
+  const [games, setGames] = useState(getGames());
+
   const removeGame = (game: String) => {
     const games = getGames();
-    const index = games.indexOf(game);
-    if (index > -1) {
-      games.splice(index, 1);
-    }
+    _.remove(games, (g) => g === game);
     saveGames(games);
     setGames(games);
   };
-  const [games, setGames] = useState(getGames());
+
   return (
     <>
       <AddGame setGames={setGames} />

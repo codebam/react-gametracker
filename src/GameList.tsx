@@ -21,7 +21,7 @@ const GameList: React.FC = () => {
       <AddGame setGames={setGames} />
       {games.map((game: any) => (
         <div className={"game"} key={game}>
-          {game}
+          <div className="game-name">{game}</div>
           <input
             className={"remove-button"}
             type="button"

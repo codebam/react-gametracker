@@ -82,7 +82,7 @@ const GameList: React.FC = () => {
         <div onClick={sortListByPublisher}>Publisher</div>
         <div onClick={sortListByYear}>Year</div>
       </div>
-      {games.map((game: any) => (
+      {games.map((game: gameObject) => (
         <div className={"game"} key={game.name}>
           <div className="game-name">{game.name}</div>
           <div className="game-publisher">{game.publisher}</div>

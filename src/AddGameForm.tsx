@@ -25,7 +25,7 @@ interface AddGameProps {
 const AddGame: React.FC<AddGameProps> = ({ setGames }) => {
   const [form, setForm] = useState(formInitialState);
 
-  const handleFormSubmit = (event: any) => {
+  const handleFormSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const games = getGames();
     const names = games.map((game: gameObject) => game.name);

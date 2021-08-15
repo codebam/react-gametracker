@@ -1,0 +1,9 @@
+h1 {
+  @apply mx-10 my-4 text-center;
+}
+.game, .list-head {
+  @apply mx-10 my-2 grid grid-cols-4;
+}
+.list-head {
+  @apply font-bold;
+}

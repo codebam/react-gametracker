@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import AddGame, { saveGames, gameObject } from "./AddGameForm";
 import _ from "lodash";
+import "./GameList.css";
 
 export const getGames = () => {
   return JSON.parse(localStorage.getItem("GAMES") ?? "[]");

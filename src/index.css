@@ -7,33 +7,12 @@
     @apply bg-green-300;
   }
   h1 {
-    @apply mx-10 my-4 text-2xl font-bold text-center;
+    @apply text-2xl font-bold;
   }
   h2 {
     @apply text-xl;
   }
   a {
     @apply text-blue-700;
-  }
-  label {
-    @apply block max-w-sm mx-auto;
-  }
-  input {
-    @apply rounded shadow hover:bg-gray-200;
-  }
-  .game, .list-head {
-    @apply mx-10 my-2 grid grid-cols-4;
-  }
-  .add-button {
-    @apply flex w-full max-w-xs p-1 mx-auto my-2;
-  }
-  .input-field {
-    @apply my-1;
-  }
-  .list-head {
-    @apply font-bold;
-  }
-  .text-label {
-    @apply inline-block w-20;
   }
 }

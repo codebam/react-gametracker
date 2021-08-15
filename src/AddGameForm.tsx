@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import _ from "lodash";
 import { getGames } from "./GameList";
+import "./AddGameForm.css";
 
 export interface gameObject {
   name: string;

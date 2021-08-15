@@ -25,7 +25,7 @@
     @apply mx-10 my-2 grid grid-cols-4;
   }
   .add-button {
-    @apply p-1 mx-40 my-2;
+    @apply p-1 mx-10 my-2;
   }
   .input-field {
     @apply my-1;
